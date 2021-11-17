@@ -4,7 +4,6 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-size: 15px;
 }
 
 body{
@@ -12,6 +11,7 @@ body{
     width: 576px;
     font-family: 'Montserrat', sans-serif;
     color: #fff;
+    font-size: 15px;
 }
 
 /*Main*/
@@ -84,7 +84,34 @@ main{
     align-items: center;
 }
 
+/*Albums*/
+.view-albums{
+    width: 90%;
+    margin: 0 auto;
+}
 
+.row{
+    display: flex;
+    justify-content: space-between;
+}
+
+.album img{
+    width: 90%;
+}
+
+.album{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*Left Menu*/
+.left-menu{
+    width: 10%;
+    float: left;
+    height: calc(100vh - 160px);
+    background-color: #000;
+}
 
 /*Footer*/
 footer{
