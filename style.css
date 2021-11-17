@@ -4,17 +4,86 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-size: 15px;
 }
 
 body{
     height: 100vh;
     width: 576px;
     font-family: 'Montserrat', sans-serif;
+    color: #fff;
 }
 
+/*Main*/
 main{
     height: calc(100vh - 80px);
+    background-color: #141922;
 }
+
+/*Sezione UPGRADE*/
+#upgrade{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#upgrade a{
+    margin-right: 10px;
+    border: 1px solid #bdbebf;
+    border-radius: 50px;
+    padding: 10px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #bdbebf;
+}
+
+#upgrade a:hover{
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+/*Sezione Container Album*/
+.container-albums{
+    width: 90%;
+    float: left;
+}
+
+/*Nav*/
+.type ul{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.type li{
+    list-style: none;
+    margin: 0 10px;
+    line-height: 50px;
+    color: #77797e;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: bolder;
+}
+
+.type li:hover{
+    color: #fff;
+    cursor: pointer;
+}
+.type ul div{
+    margin-top: -15px;
+    width: 30px;
+    border-bottom: 1px solid #adff2f;
+}
+
+.active{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 
 
 /*Footer*/
@@ -93,7 +162,7 @@ footer{
 }
 
 .fa-play{
-    padding: 2px;
+    padding: 3px;
     border: 3px solid white;
     border-radius: 50%;
 }
@@ -135,7 +204,7 @@ footer{
 .fa-circle{
     display: none;
     position: absolute;
-    top: -5px;
+    top: -8px;
     left: 80%;
 }
 
