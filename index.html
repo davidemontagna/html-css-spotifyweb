@@ -9,13 +9,9 @@
     <title>Spotify</title>
 </head>
 <body>
-    <main>
-        <section>
-            <div id="upgrade">
-                <a href="#">Effettua l'upgrade</a>
-            </div>
-        </section>
-
+    <main class="clearfix">
+        
+        <!--Menu colonna sinistra-->
         <section>
             <div class="left-menu">
 
@@ -23,35 +19,105 @@
         </section>
 
         <section>
+            <!--Contenitore Album e nav-->
             <div class="container-albums">
-                <nav class="type">
-                    <ul>
-                        <li class="active">In evidenza<div></div></li>
-                        <li>Podcast</li>
-                        <li>Classifiche</li>
-                        <li>Generi e mood</li>
-                        <li>Nuove uscite</li>
-                        <li>Scopri</li>
-                    </ul>
-                </nav>
-        
+
                 <section>
-                    <div class="view-albums">
-                        <h1>Recently played</h1>
-                        <div class="row">
-                            <div class="album">
-                                <img src="img/metal_lifting.jpg" alt="">
-                                <h4>Heavy Metal</h4>
-                                <span>Subtitle</span>
-                            </div>
-                            <div class="album">
-                                <img src="img/metal_lifting.jpg" alt="">
-                                <h4>Heavy Metal</h4>
-                                <span>Subtitle</span>
-                            </div>
-                        </div>
+                    <!--Sezione bottone Upgrade-->
+                    <div id="upgrade">
+                        <a href="#">Effettua l'upgrade</a>
                     </div>
                 </section>
+                <!--Fine sezione bottone Upgrade-->
+
+                <section>
+                    <!--Navigazione Albums-->
+                    <nav class="type">
+                        <ul>
+                            <li class="active">In evidenza<div></div></li>
+                            <li>Podcast</li>
+                            <li>Classifiche</li>
+                            <li>Generi e mood</li>
+                            <li>Nuove uscite</li>
+                            <li>Scopri</li>
+                        </ul>
+                    </nav>
+                    <!--Fine navigazione albums-->
+
+                    <section>
+                        <!--Sezione Albums e mix-->
+                        <div class="view-albums">
+                            <h1>Recently played</h1>
+                            <!--Recently Played-->
+                            <div class="row">
+                                <div class="album">
+                                    <img src="img/metal_lifting.jpg" alt="">
+                                    <h4>Heavy Metal</h4>
+                                    <span>Subtitle</span>
+                                </div>
+                                <div class="album">
+                                    <img src="img/stranger.jpeg" alt="">
+                                    <h4>Stranger Things, Vol. 1 (a Netflix Original Series Suondtrack)</h4>
+                                    <span>Kyle Dixon &amp; Michael Stein</span>
+                                </div>
+                                <div class="album">
+                                    <img src="img/aquietplace.jpeg" alt="">
+                                    <h4>A quiet place</h4>
+                                    <span>Subtitle</span>
+                                </div>
+                                <div class="album">
+                                    <img src="img/split.jpeg" alt="">
+                                    <h4>Split</h4>
+                                    <span>Subtitle</span>
+                                </div>
+                                <div class="album">
+                                    <img src="img/cure.jpeg" alt="">
+                                    <h4>A cure for wellness</h4>
+                                    <span>Subtitle</span>
+                                </div>
+                                <div class="album">
+                                    <img src="img/sinister.jpeg" alt="">
+                                    <h4>Sinister</h4>
+                                    <span>Subtitle</span>
+                                </div>
+                                
+                            </div>
+                            <!--Fine recently played-->
+
+                            <!--Sezione album creati per John Doe-->
+                            <h1>Creato per John Doe</h1>
+                            <span>Pi&ugrave; ascolti, pi&ugrave; accurati saranno i suggerimenti</span>
+                            <div class="row">
+                                <div class="album">
+                                    <img src="img/radar.jpeg" alt="">
+                                    <h4>Release radar</h4>
+                                </div>
+
+                                <div class="album">
+                                    <img src="img/mixdaily.jpeg" alt="">
+                                    <h4>Daily Mix 1</h4>
+                                </div>
+                            </div>
+                            <!--Fine sezione album creati per John Doe-->
+
+                            <!--Sezione artisti più popolari-->
+                            <h1>Artisti pi&ugrave; popolari</h1>
+                            <span>Pi&ugrave; ascolti, pi&ugrave; accurati saranno i suggerimenti</span>
+                            <div class="row">
+                                <div class="album">
+                                    <img class="circular-img" src="img/einaudi.jpeg" alt="">
+                                    <h4>Ludovico Einaudi</h4>
+                                </div>
+
+                                <div class="album">
+                                    <img class="circular-img" src="img/youg.jpeg" alt="">
+                                    <h4>Lana Del Rey</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+                
             </div>
         </section>
         
