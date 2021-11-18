@@ -430,7 +430,7 @@ footer{
     .not-mobile{
         display: block;
     }
-    main .container-albums{
+    main .container-albums, #upgrade{
         width: calc(100% - 200px);
     }
 
@@ -438,8 +438,9 @@ footer{
         width: 200px;
     }
 
+    /*Menu a sinistra, sezione "Home, Cerca, La tua libreria*/
     .left-menu .container-nav-top{
-        height: 22%;
+        height: 23%;
         align-items: flex-start;
         margin-left: 15px;
     }
@@ -456,7 +457,6 @@ footer{
         text-decoration: none;  
     }
     .left-menu .container-nav-top .menu-nav-top li a span{
-        color: #77797e;
         font-weight: bold;
         margin-left: 5px;
         transition: 0.5s;
@@ -474,10 +474,14 @@ footer{
         margin-bottom: -10px;
     }
 
+    .left-menu .container-nav-top .menu-nav-top li a span, .container-center ul li, .new-playlist .create,
+    .left-menu .container-nav-bottom li a{
+        color: #77797e;
+    }
 
-
+    /*Menu a sinistra, sezione "crea playlist!*/
     .container-center{
-        height: 40%;
+        height: 70%;
         margin-left: 15px;
         display: flex;
         flex-direction: column;
@@ -485,6 +489,8 @@ footer{
     }
     .container-center h4{
         text-transform: uppercase;
+    }
+    .container-center h4, .container-center ul li{
         margin: 15px 0;
     }
     .new-playlist{
@@ -503,17 +509,14 @@ footer{
     }
     .new-playlist .create{
         margin-left: 5px;
-        color: #77797e;
         transition: 0.3s
     }
     .container-center ul li{
         list-style: none;
-        margin: 15px 0;
         font-size: 12px;
-        color: #77797e;
         transition: 0.3s
     }
-    .container-center ul li:hover, .new-playlist:hover .create{
+    .container-center ul li:hover, .new-playlist:hover .create, .left-menu .container-nav-bottom li:hover a span{
         color: #fff;
         cursor: pointer;
     }
@@ -522,4 +525,37 @@ footer{
         cursor: pointer;
     }
 
+    /*Menu a sinistra, sezione download e utente*/
+    .left-menu .container-nav-bottom{
+        height: 10%;
+        align-items: flex-start;
+        margin-left: 15px;
+        margin-bottom: 10px;
+    }
+    .left-menu .container-nav-bottom li a{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        text-decoration: none;
+    }
+    .left-menu .container-nav-bottom li a span{
+        margin-left: 10px;
+        transition: 0.5s;
+    }
+    .profile{
+        width: 150px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .profile span{
+        margin-left: 10px;
+        font-weight: bold;
+    }
+    .container-nav-bottom hr{
+        width: 165px;
+        margin: 0 auto;
+    }
+
+    
 }
