@@ -439,13 +439,87 @@ footer{
     }
 
     .left-menu .container-nav-top{
+        height: 22%;
         align-items: flex-start;
         margin-left: 15px;
+    }
+
+    .left-menu .container-nav-top .menu-nav-top{
+        height: 200px;
     }
 
     .left-menu .container-nav-top .menu-nav-top li a{
         display: flex;
         justify-content: space-between;
         align-items: center;
+        font-size: 13px;
+        text-decoration: none;  
     }
+    .left-menu .container-nav-top .menu-nav-top li a span{
+        color: #77797e;
+        font-weight: bold;
+        margin-left: 5px;
+        transition: 0.5s;
+    }
+    .left-menu .container-nav-top .menu-nav-top li:hover a span{
+        color: #fff;
+    }
+    .left-menu .container-nav-top .menu-nav-top .not-desktop{
+        display: none;
+    }
+    .menu-nav-top .logo{
+        width: 110px;
+    }
+    .go-to{
+        margin-bottom: -10px;
+    }
+
+
+
+    .container-center{
+        height: 40%;
+        margin-left: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .container-center h4{
+        text-transform: uppercase;
+        margin: 15px 0;
+    }
+    .new-playlist{
+        display: flex;
+        align-items: center;
+    }
+    .add{
+        width: 40px;
+        height: 40px;
+        font-size: 40px;
+        line-height: 40px;
+        text-align: center;
+        color: #000;
+        background-color: #77797e;
+        transition: 0.3s
+    }
+    .new-playlist .create{
+        margin-left: 5px;
+        color: #77797e;
+        transition: 0.3s
+    }
+    .container-center ul li{
+        list-style: none;
+        margin: 15px 0;
+        font-size: 12px;
+        color: #77797e;
+        transition: 0.3s
+    }
+    .container-center ul li:hover, .new-playlist:hover .create{
+        color: #fff;
+        cursor: pointer;
+    }
+    .new-playlist:hover .add{
+        background-color: #fff;
+        cursor: pointer;
+    }
+
 }
