@@ -55,6 +55,7 @@ main{
     text-decoration: none;
     text-transform: uppercase;
     color: #bdbebf;
+    transition: 0.3s;
 }
 
 #upgrade a:hover{
@@ -214,6 +215,7 @@ main .container-albums{
 .menu-nav-top li img,
 .menu-nav-bottom li img{
     filter: invert(0.5);
+    transition: 0.5s;
 }
 .menu-nav-top li:hover img,
 .menu-nav-bottom li:hover img{
@@ -378,8 +380,15 @@ footer{
 .fa-circle{
     display: none;
     position: absolute;
-    top: -6px;
     left: 80%;
+}
+
+.listened .increase-decrease .fa-circle{
+    top: -5px;
+}
+
+.volume .volume-height .increase-decrease .fa-circle{
+    top: -7px;
 }
 
 .bar:hover .increase-decrease, .bar:hover .fa-circle,
