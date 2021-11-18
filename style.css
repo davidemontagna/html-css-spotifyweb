@@ -180,10 +180,13 @@ main .container-albums{
     float: left;
     height: calc(100vh - 80px);
     background-color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .left-menu .container-nav-top{
-    height: 80%;
+    height: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -192,16 +195,45 @@ main .container-albums{
 .left-menu .container-nav-top .menu-nav-top{
     height: 150px;
     width: 25px;
+}
+
+.left-menu .container-nav-top .menu-nav-top ul{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    height: 100%;
 }
 
 .left-menu .container-nav-top .menu-nav-top li,
-.left-menu .contaner-nav-bottom .menu-nav-bottom li{
+.left-menu .container-nav-bottom .menu-nav-bottom li{
     list-style: none;
 }
 
+.left-menu .container-nav-bottom{
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.left-menu .container-nav-bottom .menu-nav-bottom{
+    height: 150px;
+    width: 25px;
+}
+.left-menu .container-nav-bottom .menu-nav-bottom ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.left-menu .container-nav-bottom .menu-nav-bottom .user{
+    width: 25px;
+    height: 25px;
+    background-color: #808080;
+    border-radius: 50%;
+    overflow: hidden;
+}
 
 /*Footer*/
 footer{
