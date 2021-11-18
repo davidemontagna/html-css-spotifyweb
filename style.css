@@ -108,14 +108,13 @@ main .container-albums{
 
 .row{
     margin: 30px auto;
-    width: 100%;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
 
 .album img{
-    width: 70%;
+    width: 100%;
 }
 .album h4{
     font-size: 13px;
@@ -129,7 +128,7 @@ main .container-albums{
 }
 
 .album{
-    width: 50%;
+    width: 45%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -144,6 +143,32 @@ main .container-albums{
     font-size: 22px;
 }
 
+.img-album{
+    position: relative;
+}
+
+.play-album{
+    display: none;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.play-album .fa-circle-play{
+    font-size: 100px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.album:hover .play-album{
+    display: block;
+}
 
 /*Left Menu*/
 .left-menu{
@@ -232,10 +257,8 @@ footer{
     align-items: center;
 }
 
-.fa-play{
-    padding: 3px;
-    border: 3px solid white;
-    border-radius: 50%;
+.bottom-center .progress-bar .play .fa-circle-play{
+    font-size: 20px;
 }
 
 .progress{
