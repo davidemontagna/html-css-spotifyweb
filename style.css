@@ -94,7 +94,7 @@ main .container-albums{
     border-bottom: 1px solid #adff2f;
 }
 
-.active{
+.marker{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -181,6 +181,27 @@ main .container-albums{
     height: calc(100vh - 80px);
     background-color: #000;
 }
+
+.left-menu .container-nav-top{
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.left-menu .container-nav-top .menu-nav-top{
+    height: 150px;
+    width: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.left-menu .container-nav-top .menu-nav-top li,
+.left-menu .contaner-nav-bottom .menu-nav-bottom li{
+    list-style: none;
+}
+
 
 /*Footer*/
 footer{
