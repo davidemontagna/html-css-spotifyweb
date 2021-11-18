@@ -426,3 +426,26 @@ footer{
     left: -2px;
 }
 
+@media screen and (min-width: 576px){
+    .not-mobile{
+        display: block;
+    }
+    main .container-albums{
+        width: calc(100% - 200px);
+    }
+
+    .left-menu{
+        width: 200px;
+    }
+
+    .left-menu .container-nav-top{
+        align-items: flex-start;
+        margin-left: 15px;
+    }
+
+    .left-menu .container-nav-top .menu-nav-top li a{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
