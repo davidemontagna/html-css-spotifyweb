@@ -143,6 +143,10 @@ main .container-albums{
     font-size: 22px;
 }
 
+.view-albums span, .view-albums h1{
+    margin-left: 15px;
+}
+
 .img-album{
     position: relative;
 }
