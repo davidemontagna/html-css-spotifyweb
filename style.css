@@ -478,6 +478,7 @@ footer{
 
     .left-menu .container-nav-top .menu-nav-top{
         height: 200px;
+        position: relative;
     }
 
     .left-menu .container-nav-top .menu-nav-top li a{
@@ -503,6 +504,15 @@ footer{
     }
     .go-to{
         margin-bottom: -10px;
+    }
+
+    .marker2{
+        position: absolute;
+        top: 75px;
+        left: -15px;
+        display: inline-block;
+        height: 25px;
+        border-left: 2px solid #adff2f;
     }
 
     .left-menu .container-nav-top .menu-nav-top li a span, .container-center ul li, .new-playlist .create,
