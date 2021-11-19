@@ -130,11 +130,11 @@ main .container-albums{
 }
 .album h4{
     font-size: 13px;
-    margin: 10px 34px;
 }
 .view-albums .row .album span, .view-albums span{
     font-weight: bold;
-    margin-bottom: 10px;
+    margin-bottom: 25px;
+    margin-top: 10px;
     font-size: 11px;
     color: #727479;
 }
@@ -155,8 +155,8 @@ main .container-albums{
     font-size: 22px;
 }
 
-.view-albums span, .view-albums h1{
-    margin-left: 15px;
+.view-albums h1, .view-albums span{
+    margin: 0 14px;
 }
 
 .img-album{
@@ -289,7 +289,7 @@ footer{
 /*Footer sezione sinistra*/
 .bottom-left{
     display: flex;
-    width: 25%;
+    width: 200px;
     height: 80%;
     margin-left: 10px;
 }
@@ -352,12 +352,15 @@ footer{
 
 .progress-bar{
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .play{
-    width: 100%;
+    width: 250px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
 }
 
@@ -402,7 +405,7 @@ footer{
 .fa-circle{
     display: none;
     position: absolute;
-    left: 90%;
+    left: 100%;
 }
 
 .listened .increase-decrease .fa-circle{
@@ -424,7 +427,7 @@ footer{
 
 /*Footer sezione destra*/
 .bottom-right{
-    width: 25%;
+    width: 200px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -592,6 +595,10 @@ footer{
 @media (min-width: 768px){
 
     /*disposizione albums*/
+    .view-albums h1, .view-albums span{
+        margin: 0 5px;
+    }
+
     .view-albums .row{
         justify-content: flex-start;
     }
@@ -610,6 +617,19 @@ footer{
 
 /*media query spotify-lg*/
 @media (min-width: 992px){
-    
+
+    .view-albums .row{
+        flex-wrap: nowrap;
+        margin: 25px auto;
+    }
+
+    .view-albums .row .album{
+        width: 15%;
+    }
+
+    /*larghezza nav centrale*/
+    .type ul{
+        width: 100%;
+    }
 }
 
