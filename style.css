@@ -75,6 +75,11 @@ main .container-albums{
 }
 
 /*Nav*/
+.type{
+    display: flex;
+    justify-content: center;
+}
+
 .type ul{
     display: flex;
     justify-content: center;
@@ -290,7 +295,7 @@ footer{
 }
 
 .container .bottom-left img{
-    width: 20%;
+    width: 35px;
 }
 
 .img-text-small{
@@ -319,6 +324,23 @@ footer{
 
 .img-text-small div i{
     font-size: 12px;
+}
+
+.like-folder{
+    display: flex;
+    flex-direction: column;
+}
+.like-folder .fa-heart{
+    margin-bottom: 5px;
+} 
+
+.like-folder i{
+    color: #77797e;
+}
+
+.like-folder i:hover{
+    color: #fff;
+    cursor: pointer;
 }
 
 /*Footer Sezione Centrale*/
@@ -380,7 +402,7 @@ footer{
 .fa-circle{
     display: none;
     position: absolute;
-    left: 80%;
+    left: 90%;
 }
 
 .listened .increase-decrease .fa-circle{
@@ -394,6 +416,10 @@ footer{
 .bar:hover .increase-decrease, .bar:hover .fa-circle,
 .volume:hover .increase-decrease, .volume:hover .fa-circle{
     display: block;
+}
+
+.bottom-center .progress-bar .play .fa-circle-play:hover{
+    transform: scale(1.2);
 }
 
 /*Footer sezione destra*/
@@ -426,6 +452,8 @@ footer{
     left: -2px;
 }
 
+
+/*media query spotify-s*/
 @media screen and (min-width: 576px){
     .not-mobile{
         display: block;
@@ -559,3 +587,29 @@ footer{
 
     
 }
+
+/*media query spotify-md*/
+@media (min-width: 768px){
+
+    /*disposizione albums*/
+    .view-albums .row{
+        justify-content: flex-start;
+    }
+
+    .view-albums .row .album{
+        width: 23%;
+        margin: 0 5px;
+    }
+
+    /*larghezza nav centrale*/
+    .type ul{
+        width: 600px;
+    }
+
+}
+
+/*media query spotify-lg*/
+@media (min-width: 992px){
+    
+}
+
